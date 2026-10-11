@@ -32,7 +32,7 @@ a:hover .link-arrow::after,.link-arrow:hover::after{transform:scaleX(1)}a:hover 
 .prose p{margin:0 0 20px;color:#333d4a}
 .pull{font-family:var(--serif);font-style:italic;font-size:clamp(26px,2.6vw,34px);line-height:1.25;margin:36px 0 0;padding-left:24px;border-left:2px solid var(--green)}
 .work{background:var(--navy);color:#f1efe8;padding:clamp(80px,11vw,150px) 0}.work .label{color:var(--green-l)}
-.pillars{list-style:none;margin:30px 0 0;padding:0;border-top:1px solid rgba(255,255,255,.18)}
+.pillars{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.18)}
 .pillars li{display:grid;grid-template-columns:80px 260px 1fr;gap:30px;padding:34px 0;border-bottom:1px solid rgba(255,255,255,.18);align-items:baseline}
 .pillars .n{font-size:13px;letter-spacing:.14em;color:var(--green-l);font-weight:700}.pillars h3{font-size:38px}.pillars .since{margin:10px 0 0;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--green-l)}.pillars li>p{margin:0;color:#c3cad3;max-width:620px}
 .ventures{padding:clamp(80px,11vw,150px) 0;background:var(--stone)}
