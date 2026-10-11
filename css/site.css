@@ -34,7 +34,7 @@ a:hover .link-arrow::after,.link-arrow:hover::after{transform:scaleX(1)}a:hover 
 .work{background:var(--navy);color:#f1efe8;padding:clamp(80px,11vw,150px) 0}.work .label{color:var(--green-l)}
 .pillars{list-style:none;margin:30px 0 0;padding:0;border-top:1px solid rgba(255,255,255,.18)}
 .pillars li{display:grid;grid-template-columns:80px 260px 1fr;gap:30px;padding:34px 0;border-bottom:1px solid rgba(255,255,255,.18);align-items:baseline}
-.pillars .n{font-size:13px;letter-spacing:.14em;color:var(--green-l);font-weight:700}.pillars h3{font-size:38px}.pillars p{margin:0;color:#c3cad3;max-width:620px}
+.pillars .n{font-size:13px;letter-spacing:.14em;color:var(--green-l);font-weight:700}.pillars h3{font-size:38px}.pillars .since{margin:10px 0 0;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--green-l)}.pillars li>p{margin:0;color:#c3cad3;max-width:620px}
 .ventures{padding:clamp(80px,11vw,150px) 0;background:var(--stone)}
 .v-list{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(22px,3vw,40px);margin-top:20px}
 .venture{text-decoration:none;display:flex;flex-direction:column}
