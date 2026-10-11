@@ -80,3 +80,6 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 .venture .cover-link{display:block}.v-links{display:flex;gap:22px;flex-wrap:wrap}
 @media (max-width:1100px) and (min-width:901px){.v-list{grid-template-columns:repeat(2,1fr)!important}}
 @media (max-width:900px){.v-list{grid-template-columns:1fr!important}.venture picture.l-buf img{width:30%}}
+.v-list{display:flex!important;flex-wrap:wrap;justify-content:center;gap:56px 28px}.v-list>.venture{flex:0 1 calc((100% - 56px)/3)}
+@media (max-width:1100px) and (min-width:901px){.v-list>.venture{flex-basis:calc((100% - 28px)/2)}}
+@media (max-width:900px){.v-list>.venture{flex-basis:100%}}
