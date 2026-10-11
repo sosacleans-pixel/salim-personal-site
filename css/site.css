@@ -63,3 +63,6 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 .hero,.grid-2,.contact-panel{grid-template-columns:1fr}.hero{padding-top:36px}.hero-photo{order:-1;aspect-ratio:1/1}
 .pillars li{grid-template-columns:1fr;gap:8px}.v-list,.quotes{grid-template-columns:1fr}.venture picture{aspect-ratio:3/2}.cred-list{columns:1}.contact-photo{min-height:260px;order:-1}.contact-list li{grid-template-columns:1fr;gap:2px}.contact-list a{font-size:18px;word-break:normal}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.v-list{grid-template-columns:repeat(4,1fr)}.venture picture.contain{background:#fff}.venture picture.contain img{object-fit:contain;padding:4%;filter:none}
+@media (max-width:1100px) and (min-width:901px){.v-list{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){.v-list{grid-template-columns:1fr}}
