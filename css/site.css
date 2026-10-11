@@ -71,3 +71,6 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 .venture picture.l-coach{background:#141414}.venture picture.l-santosh{background:#2f3a2e}.venture picture.l-sosa{background:#16304f}
 .venture:hover picture.logo img{transform:scale(1.05)}
 @media (max-width:900px){.venture picture{aspect-ratio:16/10}.venture picture.logo img{width:52%}}
+.venture picture.cover{background:#dcd6c8;display:flex;align-items:center;justify-content:center}.venture picture.cover img{height:84%;width:auto;object-fit:contain;filter:none;box-shadow:0 14px 28px rgba(14,26,43,.28);transition:transform .6s}
+.venture:hover picture.cover img{transform:translateY(-4px)}
+.venture p.subtitle{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--ink);margin:6px 0 0;flex:0}
