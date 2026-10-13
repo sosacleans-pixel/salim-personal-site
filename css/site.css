@@ -83,3 +83,4 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 .v-list{display:flex!important;flex-wrap:wrap;justify-content:center;gap:56px 28px}.v-list>.venture{flex:0 1 calc((100% - 56px)/3)}
 @media (max-width:1100px) and (min-width:901px){.v-list>.venture{flex-basis:calc((100% - 28px)/2)}}
 @media (max-width:900px){.v-list>.venture{flex-basis:100%}}
+.press{padding:clamp(70px,9vw,120px) 0;border-top:1px solid var(--line)}.press-item{max-width:900px;border-top:1px solid var(--line);padding-top:32px}.press-pub{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:var(--muted);margin:0 0 14px}.press-item h3{font-size:clamp(24px,3vw,36px);line-height:1.2}.press-q{margin:26px 0 30px;padding-left:22px;border-left:2px solid var(--green);font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.2vw,26px);line-height:1.4;color:#2b3645}
