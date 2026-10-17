@@ -83,7 +83,7 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 /* v6: pillars (4), featured card, past ventures, contact form, social */
 .pillars li{grid-template-columns:80px 340px 1fr}.pillars h3{font-size:34px}
 .press-card{display:grid;grid-template-columns:minmax(260px,440px) 1fr;gap:clamp(26px,4vw,56px);align-items:start;border-top:1px solid var(--line);padding-top:36px}
-.press-thumb{display:block;overflow:hidden;aspect-ratio:5/3;background:#ddd}.press-thumb img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;transition:transform 1s cubic-bezier(.2,.7,.2,1)}.press-card:hover .press-thumb img{transform:scale(1.03)}
+.press-thumb{display:block;overflow:hidden;aspect-ratio:5/3;background:#ddd}.press-thumb img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;transition:transform 1s cubic-bezier(.2,.7,.2,1)}.press-card:hover .press-thumb img{transform:scale(1.03)}
 .press-card h3{font-size:clamp(24px,2.6vw,34px);line-height:1.2}.press-card h3 a{text-decoration:none}.press-card h3 a:hover{color:var(--green)}
 .press-ex{margin:20px 0 0;color:#333d4a;max-width:640px}.press-card .press-q{margin:22px 0 28px}
 .past{padding:clamp(80px,11vw,150px) 0;background:var(--paper);border-top:1px solid var(--line)}
@@ -106,3 +106,13 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 @media (max-width:520px){.pv-grid{grid-template-columns:1fr}.pv{min-height:0;flex-direction:row;justify-content:flex-start;align-items:baseline;gap:18px;padding:18px 20px}}
 .cred-list{columns:auto;display:grid;grid-template-columns:1fr 1fr;column-gap:40px;align-content:start}
 @media (max-width:900px){.cred-list{grid-template-columns:1fr}}
+/* v7: experience teaser, subpages */
+.xp-teaser{background:var(--stone);padding:0 0 clamp(70px,9vw,120px)}
+.xp-link{display:grid;grid-template-columns:1fr auto;grid-template-areas:"lab lab" "title cta";align-items:end;gap:6px 30px;text-decoration:none;border-top:1px solid var(--line);padding-top:34px}
+.xp-link .label{grid-area:lab;margin:0}.xp-title{grid-area:title;font-family:var(--serif);font-size:clamp(28px,3.2vw,42px);line-height:1.1;letter-spacing:-.02em;transition:color .3s}.xp-link .link-arrow{grid-area:cta;justify-self:end}.xp-link:hover .xp-title{color:var(--green)}
+.page-head{padding-top:clamp(50px,9vh,110px);padding-bottom:clamp(30px,5vh,60px)}
+.page-h1{font-size:clamp(46px,6.5vw,92px);line-height:1;letter-spacing:-.03em;margin-bottom:28px}
+.subpage .past+.past{padding-top:0;border-top:0}
+.subpage .contact{padding-top:clamp(30px,5vw,60px)}.subpage .contact .page-h1{font-size:clamp(40px,4.6vw,60px);line-height:1.05;margin-bottom:26px}
+.nav a[aria-current="page"]::after{transform:scaleX(1)}
+@media (max-width:900px){.xp-link{grid-template-columns:1fr;grid-template-areas:"lab" "title" "cta"}.xp-link .link-arrow{justify-self:start;margin-top:14px}}
