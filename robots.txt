@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /phoenix-decorations/
 
 Sitemap: https://salimheyaime.com/sitemap.xml
