@@ -1,10 +1,10 @@
 (function(){
   var es={
-    draft:"Vista previa. No es el sitio final. Los datos entre [corchetes] son provisionales.",
+    draft:"Vista previa. No es el sitio final.",
     navServices:"Servicios",navHow:"Cómo funciona",navGallery:"Galería",navFaq:"Preguntas",navQuote:"Cotizar",
     heroEyebrow:"Fiestas · Cumpleaños · Eventos",
     heroTitle:"Decoración que hace brillar cada celebración.",
-    heroLead:"Guirnaldas y arcos de globos, fondos personalizados, montajes de mesa y decoración de temporada, diseñados e instalados para tu gran día en [City, State].",
+    heroLead:"Guirnaldas y arcos de globos, fondos personalizados, montajes de mesa y decoración de temporada, diseñados e instalados para tu gran día.",
     heroCta:"Solicitar cotización",heroCta2:"Ver servicios",
     svcEyebrow:"Lo que hacemos",svcTitle:"Decoración para cada motivo de celebración",
     s1t:"Cumpleaños",s1d:"Paredes de globos temáticas, mesas de postres y rincones para fotos para niños y adultos.",
@@ -19,20 +19,19 @@
     h3t:"Nosotros lo montamos",h3d:"Llegamos, instalamos todo y tú solo disfrutas la fiesta.",
     galEyebrow:"Galería",galTitle:"Fotos muy pronto",galLead:"Pronto publicaremos aquí nuestro portafolio de eventos reales.",galPh:"Fotos muy pronto",
     qEyebrow:"Solicitar cotización",qTitle:"Planeemos algo inolvidable",qLead:"Cuéntanos sobre tu evento y te responderemos con ideas y una cotización personalizada.",
-    phone:"Teléfono",email:"Correo",area:"Zona de servicio",
     fName:"Nombre",fEmail:"Correo",fPhone:"Teléfono",fDate:"Fecha del evento",fType:"Tipo de evento",oChoose:"Elige una opción",oOther:"Otro",
     fDetails:"Detalles",fDetailsPh:"Tema, colores, lugar, número de invitados, lo que debamos saber",
-    fSubmit:"Enviar solicitud",fNote:"Formulario de prueba: aún no está conectado. Necesita un correo de destino antes del lanzamiento.",
+    fSubmit:"Enviar solicitud",fNote:"Formulario de demostración: no se envía nada.",
     faqEyebrow:"Preguntas",faqTitle:"Preguntas frecuentes",
     q1:"¿Con cuánta anticipación debo reservar?",a1:"Mientras antes mejor, sobre todo en temporada de fiestas. Escríbenos en cuanto tengas fecha y confirmamos disponibilidad.",
     q2:"¿Ustedes montan y desmontan?",a2:"Sí. Nos encargamos de la instalación, y el desmontaje se puede incluir en tu cotización.",
     q3:"¿Pueden usar mi tema o mis colores?",a3:"Claro que sí. Comparte tus colores, tema o fotos de inspiración y diseñamos a partir de ellos.",
-    q4:"¿Qué zonas atienden?",a4:"Atendemos [City, State] y alrededores. Pregúntanos por tu ubicación.",
+    q4:"¿Qué debo incluir en mi solicitud?",a4:"El tipo de evento, la fecha, el lugar, los colores o el tema, el número de invitados y fotos de inspiración. Mientras más sepamos, mejor podremos planear.",
     q5:"¿Cuánto cuesta?",a5:"Cada evento es diferente, así que damos una cotización personalizada según el tamaño, el diseño y la ubicación. Solicita una cotización para empezar.",
-    fTag:"Decoración para días festivos, cumpleaños y eventos.",rights:"Todos los derechos reservados.",
-    msg:"Gracias. Este formulario es un borrador y aún no envía mensajes."
+    fTag:"Decoración para días festivos, cumpleaños y eventos.",
+    msg:"¡Gracias! Esta es una demostración, así que no se envió nada. ¡Nos encantará ayudarte a celebrar!"
   };
-  var en={msg:"Thanks! This form is a draft and does not send messages yet."};
+  var en={msg:"Thank you! This is just a demo, so nothing was sent. We would love to help you celebrate!"};
   var nodes=document.querySelectorAll("[data-i18n]");
   nodes.forEach(function(n){en[n.dataset.i18n]=n.textContent;});
   var ph=document.querySelectorAll("[data-i18n-ph]");
@@ -48,10 +47,10 @@
   }
   btn.addEventListener("click",function(){apply(lang==="en"?"es":"en");});
   var f=document.getElementById("quoteForm"),m=document.getElementById("formMsg");
-  f.addEventListener("submit",function(e){
-    e.preventDefault();
+  // Demo only: never submits or sends data anywhere.
+  f.addEventListener("submit",function(e){e.preventDefault();});
+  document.getElementById("quoteBtn").addEventListener("click",function(){
     if(!f.reportValidity())return;
-    m.textContent=(lang==="es"?es:en).msg;m.hidden=false;
+    m.textContent=(lang==="es"?es:en).msg;m.hidden=false;f.reset();
   });
-  document.getElementById("yr").textContent=new Date().getFullYear();
 })();
