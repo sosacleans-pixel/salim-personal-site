@@ -131,3 +131,7 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 .pv-logo--text{background:var(--stone);font-family:var(--serif);font-size:24px;letter-spacing:.02em;color:var(--muted)}
 .pv{justify-content:flex-start}.pv .pv-name{margin-top:auto}
 @media (max-width:520px){.pv{align-items:center}.pv .pv-name{margin-top:0}.pv-logo{width:96px;height:52px;padding:8px 10px;flex:none;border-radius:8px}.pv-logo img{max-height:34px}.pv-logo--text{font-size:17px}}
+/* experience cards: centered number, logo and name */
+.pv-grid .pv{align-items:center;justify-content:flex-start;text-align:center;gap:18px}
+.pv-grid .pv .pv-name{margin-top:0}
+@media (max-width:520px){.pv-grid .pv{flex-direction:column;align-items:center;justify-content:flex-start;gap:12px;padding:22px 20px}.pv-grid .pv-logo{width:140px;height:68px;padding:10px 14px}.pv-grid .pv-logo img{max-height:46px}.pv-grid .pv-logo--text{font-size:20px}}
