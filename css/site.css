@@ -116,3 +116,6 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 .subpage .contact{padding-top:clamp(30px,5vw,60px)}.subpage .contact .page-h1{font-size:clamp(40px,4.6vw,60px);line-height:1.05;margin-bottom:26px}
 .nav a[aria-current="page"]::after{transform:scaleX(1)}
 @media (max-width:900px){.xp-link{grid-template-columns:1fr;grid-template-areas:"lab" "title" "cta"}.xp-link .link-arrow{justify-self:start;margin-top:14px}}
+/* v8: My ventures as a 2x2 grid on tablet and desktop, 1 column on mobile */
+.v-list>.venture{flex-basis:calc((100% - 28px)/2)}
+@media (max-width:640px){.v-list>.venture{flex-basis:100%}}
