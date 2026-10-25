@@ -124,3 +124,10 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 .cred-h{font-size:clamp(22px,2.2vw,28px);line-height:1.2;margin:0 0 16px}
 .cred-cols .cred-list{display:block;columns:auto}
 @media (max-width:640px){.cred-cols{grid-template-columns:1fr}}
+/* experience logos */
+.pv-logo{display:flex;align-items:center;justify-content:center;width:172px;height:84px;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:10px}
+.pv-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:56px}
+.pv-logo--dark{background:var(--navy);border-color:var(--navy)}
+.pv-logo--text{background:var(--stone);font-family:var(--serif);font-size:24px;letter-spacing:.02em;color:var(--muted)}
+.pv{justify-content:flex-start}.pv .pv-name{margin-top:auto}
+@media (max-width:520px){.pv{align-items:center}.pv .pv-name{margin-top:0}.pv-logo{width:96px;height:52px;padding:8px 10px;flex:none;border-radius:8px}.pv-logo img{max-height:34px}.pv-logo--text{font-size:17px}}
