@@ -147,3 +147,13 @@ figcaption{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-wei
 .pv-grid .pv-logo{background:#fff;border:0}
 .pv-grid .pv-logo--dark{background:var(--navy)}
 .pv-grid .pv-logo--text{background:#fff}
+
+/* v14: text-only venture tile, social icons on cards, 5-card 2-col layout */
+.venture-main{text-decoration:none;display:flex;flex-direction:column;flex:1;color:inherit}
+.venture .logo-text{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;margin-bottom:22px;background:var(--navy);color:#f1efe8;font-family:var(--serif);font-size:clamp(40px,4.2vw,56px);letter-spacing:.06em}
+@media (max-width:900px){.venture .logo-text{aspect-ratio:16/10}}
+.v-social{list-style:none;display:flex;gap:10px;margin:16px 0 0;padding:0;align-self:flex-start}
+.v-social a{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;color:var(--ink);transition:color .3s,border-color .3s,background .3s}
+.v-social a:hover{color:#fff;background:var(--navy);border-color:var(--navy)}
+.v-social svg{width:16px;height:16px}
+.v-list{justify-content:flex-start}
